@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>{{appTitle}}</title>
+      <link rel="stylesheet" href="/stylesheets/style.css" />
+   </head>
+
+   <body>
+      <nav>
+         {{#if isAdmin}}
+            <p>Admin</p>
+            <p>Admin</p>
+            <p>Admin</p>
+         {{/if}}
+         {{#if isUser}} 
+            <p>User</p>
+            <p>User</p>
+            <p>User</p>
+         {{/if}}
+      </nav>
+
+      {{{body}}}
+      <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+      <script src="/js/script.js"></script>
+   </body>
+
+</html>
